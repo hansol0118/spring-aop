@@ -10,7 +10,7 @@ public class PersonController {
 
     private final PersonService personService;
 
-    public PersonController(@Qualifier("personServiceV3") PersonService personService) {
+    public PersonController(@Qualifier("personService") PersonService personService) {
         this.personService = personService;
     }
 

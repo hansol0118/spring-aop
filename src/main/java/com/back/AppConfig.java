@@ -49,8 +49,8 @@ public class AppConfig {
     @Order(2)
     public ApplicationRunner myApplicationRunner2() {
         return args -> {
-            work1();
-            work2();
+            self.work1();
+            self.work2();
         };
     }
 
@@ -64,12 +64,13 @@ public class AppConfig {
         System.out.println("work2");
     }
 
+    public void work3(){
+        System.out.println("work2");
+    }
+
 //    @Bean
 //    public ArrayList<Integer> numbers() {
 //        System.out.println("numbers 빈이 생성되었습니다.");
 //        return new ArrayList(List.of(1,2,3));
 //    }
-
-
-
 }
